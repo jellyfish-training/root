@@ -62,7 +62,7 @@ create_gcs_camera_bucket()
 ###############################################
 INSTALL_FLAG=$TEMP_DATA/install.marker  # Location where the install flag is set to avoid repeated installs
 mkdir -p $TEMP_DATA
-cd js
+cd $HOME/cloud-derby/car/simulator/js
 
 if [ -f "$INSTALL_FLAG" ]; then
     echo_my "File '$INSTALL_FLAG' was found = > no need to do the install since it already has been done."
